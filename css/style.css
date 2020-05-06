@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Brown';
+    src: url('/font/Brown.ttf');
+}
+
+* {
+    margin: 0;
+    font-family: 'Brown';
+}
+
+.container-topo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container {
+    width: 84%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.reserva {
+    display: flex;
+}
+
+.reserva a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    padding: 15px;
+    border-right: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.reserva div:first-child a {
+    border-left: 1px solid #E0E0E0;
+    border-radius: 15px 0 0 15px;
+}
+
+.reserva div:last-child a {
+    border-radius: 0 15px 15px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #222222;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #E0E0E0;
+}
