@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Brown';
+    src: url('Brown.ttf');
+}
+*{
+    margin: 0;
+    font-family: 'Brown';
+}
+.container-geral{
+    width: 100%;
+}
+.aviso{
+    display: flex;
+    background-color: #F7F7F7;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+}
+.container-branco{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    height: 400px;
+   
+}
+.container-preto{
+    background-color: #000;
+    height: 400px;
+}
+.container-cinza{
+    background-color: #F7F7F7;
+    height: 400px;
+}
+.container{
+    width: 80%;
+}
+.navbar{
+    background-color: red;
+}
