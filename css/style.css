@@ -1,94 +1,159 @@
-@font-face {
-    font-family: 'Brown';
-    src: url('/font/Brown.ttf');
-}
-
-* {
-    margin: 0;
-    font-family: 'Brown';
-}
-
-.container-topo {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.container {
-    width: 84%;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-}
-
-.reserva {
-    display: flex;
-    padding: 14px 0;
-}
-
-.reserva a {
-    text-decoration: none;
-    color: #222222;
-    font-weight: bold;
-    padding: 15px;
-    border-right: 1px solid #E0E0E0;
-    border-top: 1px solid #E0E0E0;
-    border-bottom: 2px solid #E0E0E0;
-}
-
-.reserva div:first-child a {
-    border-left: 1px solid #E0E0E0;
-    border-radius: 15px 0 0 15px;
-    padding-left: 18px;
-}
-
-.reserva div:last-child a {
-    border-radius: 0 15px 15px 0;
-    padding-bottom: 13px;
-    padding-top: 17px;
-    padding-left: 18px;
-    padding-right: 18px;
-}
-
-.reserva:hover{
-    border-radius: 15px;
-    box-shadow: 0 0 10px 0 lightgray;
-}
-
-.menu {
-    display: flex;
-}
-
-.menu a {
-    text-decoration: none;
-    margin-right: 10px;
-    color: #222222;
-    font-weight: bold;
-    padding: 12px;
-}
-
-.menu div:nth-of-type(3) a{
-    padding: 12px 18px;
-    border: 1px  solid #E0E0E0;
-    border-bottom: 2px solid #E0E0E0;
-    border-radius: 25px;
-}
-
-.menu div:nth-of-type(3) a:hover{
-    box-shadow: 0 0 10px 0 lightgray;
-}
-
-.menu div:nth-of-type(1) a:hover, .menu div:nth-of-type(2) a:hover{
-    background-color: #F7F7F7;
-    border-radius: 25px;
-}
-.menu img{
-    margin-left: 5px;
-}
-hr {
-    border: 1px solid #E0E0E0;
-}
+    @font-face {
+        font-family: 'Brown';
+        src: url('/font/Brown.ttf');
+    }
+    
+    * {
+        margin: 0;
+        font-family: 'Brown';
+    }
+    
+    .container-topo,
+    .container-centro {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .container {
+        width: 84%;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
+    
+    .reserva {
+        display: flex;
+        padding: 14px 0;
+    }
+    
+    .reserva a {
+        text-decoration: none;
+        color: #222222;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 15px;
+        border-right: 1px solid #E0E0E0;
+        border-top: 1px solid #E0E0E0;
+        border-bottom: 2px solid #E0E0E0;
+    }
+    
+    .reserva div:first-child a {
+        border-left: 1px solid #E0E0E0;
+        border-radius: 15px 0 0 15px;
+        padding-left: 18px;
+    }
+    
+    .reserva div:last-child a {
+        border-radius: 0 15px 15px 0;
+        padding-bottom: 13px;
+        padding-top: 17px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    
+    .reserva:hover {
+        border-radius: 15px;
+        box-shadow: 0 0 10px 0 lightgray;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        margin-right: 10px;
+        color: #222222;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    .menu div:nth-of-type(3) a {
+        padding: 12px 18px;
+        border: 1px solid #E0E0E0;
+        border-bottom: 2px solid #E0E0E0;
+        border-radius: 25px;
+    }
+    
+    .menu div:nth-of-type(3) a:hover {
+        box-shadow: 0 0 10px 0 lightgray;
+    }
+    
+    .menu div:nth-of-type(1) a:hover,
+    .menu div:nth-of-type(2) a:hover {
+        background-color: #F7F7F7;
+        border-radius: 25px;
+    }
+    
+    .menu img {
+        margin-left: 5px;
+    }
+    
+    hr {
+        border: 1px solid #E0E0E0;
+    }
+    
+    .container-dropdown {
+        display: flex;
+        width: 81%;
+        justify-content: flex-end;
+    }
+    
+    .dropdown {
+        display: none;
+        width: 180px;
+        box-shadow: 0 0 10px 0 lightgray;
+        margin-top: -7px;
+        background-color: #FFF;
+        border-radius: 12px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 9999;
+    }
+    
+    .dropdown a {
+        text-decoration: none;
+        color: #222222;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .dropdown div {
+        padding: 10px;
+    }
+    
+    .dropdown div:hover {
+        background-color: #F7F7F7;
+    }
+    
+    .dropdown img {
+        margin-bottom: -3px;
+        margin-right: 5px;
+    }
+    
+    .dropdown span {
+        font-size: 16px;
+        margin-right: 7px;
+    }
+    
+    .quartos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 19%;
+        margin-right: 1%;
+    }
+    
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
