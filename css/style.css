@@ -27,6 +27,7 @@
 
 .reserva {
     display: flex;
+    padding: 14px 0;
 }
 
 .reserva a {
@@ -42,10 +43,20 @@
 .reserva div:first-child a {
     border-left: 1px solid #E0E0E0;
     border-radius: 15px 0 0 15px;
+    padding-left: 18px;
 }
 
 .reserva div:last-child a {
     border-radius: 0 15px 15px 0;
+    padding-bottom: 13px;
+    padding-top: 17px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.reserva:hover{
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 lightgray;
 }
 
 .menu {
@@ -54,11 +65,30 @@
 
 .menu a {
     text-decoration: none;
-    margin-right: 25px;
+    margin-right: 10px;
     color: #222222;
     font-weight: bold;
+    padding: 12px;
 }
 
+.menu div:nth-of-type(3) a{
+    padding: 12px 18px;
+    border: 1px  solid #E0E0E0;
+    border-bottom: 2px solid #E0E0E0;
+    border-radius: 25px;
+}
+
+.menu div:nth-of-type(3) a:hover{
+    box-shadow: 0 0 10px 0 lightgray;
+}
+
+.menu div:nth-of-type(1) a:hover, .menu div:nth-of-type(2) a:hover{
+    background-color: #F7F7F7;
+    border-radius: 25px;
+}
+.menu img{
+    margin-left: 5px;
+}
 hr {
     border: 1px solid #E0E0E0;
 }
