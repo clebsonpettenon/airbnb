@@ -23,13 +23,24 @@ let quartosAirBnb = () => {
 let carregarQuartos = (quarto) => {
     for (let i = 0; i < quarto.length; i++) {
         let tag = '<div class="card">' +
-            '<img src=' + quarto[i].photo + '>' +
+            '<img class="foto" src=' + quarto[i].photo + '>' +
+            '<div class="tipo-propriedade">' +
+            '<div>' +
             '<p>' + quarto[i].property_type + '</p>' +
-            '<p>' + quarto[i].name + '</p>' +
-            '<p>' + quarto[i].price + '</p>' +
+            '</div>' +
+            '<div>' +
+            '<img src="img/estrela.png" width="14" heigth="14">  4,95' +
+            '</div>' +
+            '</div>' +
+            '<p class="nome">' + quarto[i].name + '</p>' +
+            '<p class=preco><strong>R$ ' + quarto[i].price + '</strong>/noite</p>' +
             '</div>';
         document.querySelector('.quartos').insertAdjacentHTML('beforeend', tag);
     }
 }
 
 quartosAirBnb();
+
+document.getElementById('linguagem-moeda').onclick = () => {
+    dropdown();
+}

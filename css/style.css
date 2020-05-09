@@ -1,159 +1,385 @@
-    @font-face {
-        font-family: 'Brown';
-        src: url('/font/Brown.ttf');
-    }
-    
-    * {
-        margin: 0;
-        font-family: 'Brown';
-    }
-    
-    .container-topo,
-    .container-centro {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .container {
-        width: 84%;
-    }
-    
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-    }
-    
-    .reserva {
-        display: flex;
-        padding: 14px 0;
-    }
-    
-    .reserva a {
-        text-decoration: none;
-        color: #222222;
-        font-weight: bold;
-        font-size: 14px;
-        padding: 15px;
-        border-right: 1px solid #E0E0E0;
-        border-top: 1px solid #E0E0E0;
-        border-bottom: 2px solid #E0E0E0;
-    }
-    
-    .reserva div:first-child a {
-        border-left: 1px solid #E0E0E0;
-        border-radius: 15px 0 0 15px;
-        padding-left: 18px;
-    }
-    
-    .reserva div:last-child a {
-        border-radius: 0 15px 15px 0;
-        padding-bottom: 13px;
-        padding-top: 17px;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-    
-    .reserva:hover {
-        border-radius: 15px;
-        box-shadow: 0 0 10px 0 lightgray;
-    }
-    
-    .menu {
-        display: flex;
-    }
-    
-    .menu a {
-        text-decoration: none;
-        margin-right: 10px;
-        color: #222222;
-        font-weight: bold;
-        font-size: 14px;
-        padding: 12px;
-    }
-    
-    .menu div:nth-of-type(3) a {
-        padding: 12px 18px;
-        border: 1px solid #E0E0E0;
-        border-bottom: 2px solid #E0E0E0;
-        border-radius: 25px;
-    }
-    
-    .menu div:nth-of-type(3) a:hover {
-        box-shadow: 0 0 10px 0 lightgray;
-    }
-    
-    .menu div:nth-of-type(1) a:hover,
-    .menu div:nth-of-type(2) a:hover {
-        background-color: #F7F7F7;
-        border-radius: 25px;
-    }
-    
-    .menu img {
-        margin-left: 5px;
-    }
-    
-    hr {
-        border: 1px solid #E0E0E0;
-    }
-    
-    .container-dropdown {
-        display: flex;
-        width: 81%;
-        justify-content: flex-end;
-    }
-    
-    .dropdown {
-        display: none;
-        width: 180px;
-        box-shadow: 0 0 10px 0 lightgray;
-        margin-top: -7px;
-        background-color: #FFF;
-        border-radius: 12px;
-        padding: 8px 0;
-        position: absolute;
-        z-index: 9999;
-    }
-    
-    .dropdown a {
-        text-decoration: none;
-        color: #222222;
-        font-weight: bold;
-        font-size: 14px;
-    }
-    
-    .dropdown div {
-        padding: 10px;
-    }
-    
-    .dropdown div:hover {
-        background-color: #F7F7F7;
-    }
-    
-    .dropdown img {
-        margin-bottom: -3px;
-        margin-right: 5px;
-    }
-    
-    .dropdown span {
-        font-size: 16px;
-        margin-right: 7px;
-    }
-    
-    .quartos {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .card {
-        width: 19%;
-        margin-right: 1%;
-    }
-    
-    .card img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
+       * {
+           margin: 0;
+           font-family: Helvetica;
+           font-size: 14px;
+           color: #222222;
+       }
+       
+       .container-topo,
+       .container-centro {
+           display: flex;
+           width: 100%;
+           justify-content: center;
+       }
+       
+       .container {
+           width: 84%;
+       }
+       
+       .navbar {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           height: 80px;
+       }
+       
+       .reserva {
+           display: flex;
+           padding: 14px 0;
+       }
+       
+       .reserva a {
+           text-decoration: none;
+           font-weight: bold;
+           padding: 15px;
+           border-right: 1px solid #E0E0E0;
+           border-top: 1px solid #E0E0E0;
+           border-bottom: 2px solid #E0E0E0;
+       }
+       
+       .reserva div:first-child a {
+           border-left: 1px solid #E0E0E0;
+           border-radius: 15px 0 0 15px;
+           padding-left: 18px;
+       }
+       
+       .reserva div:last-child a {
+           border-radius: 0 15px 15px 0;
+           padding-bottom: 12px;
+           padding-top: 18px;
+           padding-left: 18px;
+           padding-right: 18px;
+       }
+       
+       .reserva:hover {
+           border-radius: 15px;
+           box-shadow: 0 0 10px 0 lightgray;
+       }
+       
+       .menu {
+           display: flex;
+       }
+       
+       .menu a {
+           text-decoration: none;
+           margin-right: 10px;
+           font-weight: bold;
+           padding: 12px;
+       }
+       
+       .menu div:nth-of-type(3) a {
+           padding: 12px 18px;
+           border: 1px solid #E0E0E0;
+           border-bottom: 2px solid #E0E0E0;
+           border-radius: 25px;
+       }
+       
+       .menu div:nth-of-type(3) a:hover {
+           box-shadow: 0 0 10px 0 lightgray;
+       }
+       
+       .menu div:nth-of-type(1) a:hover,
+       .menu div:nth-of-type(2) a:hover {
+           background-color: #F7F7F7;
+           border-radius: 25px;
+       }
+       
+       .menu img {
+           margin-left: 5px;
+       }
+       
+       hr {
+           border: 1px solid #E0E0E0;
+       }
+       
+       .container-dropdown {
+           display: flex;
+           width: 81%;
+           justify-content: flex-end;
+       }
+       
+       .dropdown {
+           display: none;
+           width: 180px;
+           box-shadow: 0 0 10px 0 lightgray;
+           margin-top: -7px;
+           background-color: #FFF;
+           border-radius: 12px;
+           padding: 8px 0;
+           position: absolute;
+           z-index: 9999;
+       }
+       
+       .dropdown a {
+           text-decoration: none;
+           font-weight: bold;
+       }
+       
+       .dropdown div {
+           padding: 10px;
+       }
+       
+       .dropdown div:hover {
+           background-color: #F7F7F7;
+       }
+       
+       .dropdown img {
+           margin-bottom: -3px;
+           margin-right: 5px;
+       }
+       
+       .dropdown span {
+           font-size: 16px;
+           margin-right: 7px;
+       }
+       
+       .resultado p {
+           margin-top: 55px;
+           margin-bottom: 20px;
+       }
+       
+       .resultado h2 {
+           font-size: 32px;
+       }
+       
+       .container-filtros {
+           display: flex;
+           justify-content: space-between;
+           margin: 40px 0;
+       }
+       
+       .filtros {
+           display: flex;
+       }
+       
+       .filtros a {
+           text-decoration: none;
+           margin-right: 10px;
+           padding: 10px;
+           border: 1px solid #E0E0E0;
+           border-radius: 25px;
+       }
+       
+       .filtros a:hover {
+           border: 1px solid #222222;
+       }
+       
+       .mapa a {
+           text-decoration: none;
+           padding: 10px;
+       }
+       
+       .mapa a:hover {
+           background-color: #F7F7F7;
+           border-radius: 8px;
+       }
+       
+       .mapa img {
+           margin-bottom: -3px;
+           margin-right: 8px;
+       }
+       
+       .aviso {
+           display: flex;
+           margin-bottom: 40px;
+       }
+       
+       .aviso img {
+           margin-bottom: -13px;
+           margin-right: 20px;
+       }
+       
+       .quartos {
+           display: flex;
+           flex-wrap: wrap;
+       }
+       
+       .card {
+           width: 19%;
+           margin-right: 1%;
+           margin-bottom: 30px;
+       }
+       
+       .card .foto {
+           width: 100%;
+           height: auto;
+           border-radius: 5px;
+       }
+       
+       .card .foto:hover {
+           cursor: pointer;
+           z-index: 9999;
+           position: relative;
+           width: 400px;
+           height: auto;
+           transition: 0.5s;
+           border-radius: 0;
+       }
+       
+       .card .tipo-propriedade {
+           display: flex;
+           justify-content: space-between;
+       }
+       
+       .card .tipo-propriedade p {
+           color: gray
+       }
+       
+       .card .nome {
+           margin: 7px 0;
+       }
+       
+       .preco,
+       .preco strong {
+           font-size: 16px !important;
+       }
+       
+       .container-paginacao {
+           display: flex;
+           justify-content: center;
+       }
+       
+       .paginacao {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       
+       .item-paginacao {
+           display: flex;
+           margin-top: 20px;
+           margin-bottom: 15px;
+       }
+       
+       .item-paginacao a {
+           margin-right: 50px;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 16px;
+       }
+       
+       .item-paginacao div:nth-of-type(1) a {
+           background-color: #222222;
+           color: #FFFFFF;
+           border-radius: 100px;
+           padding: 10px 15px;
+       }
+       
+       .item-paginacao div:last-child img {
+           background-color: #FFFFFF;
+           border: 1px solid #E0E0E0;
+           border-radius: 100px;
+           padding: 10px;
+           box-shadow: 0 0 10px 0 lightgray;
+           margin-top: -11px;
+       }
+       
+       .container-paginacao .aviso {
+           font-size: 12px;
+           text-align: center;
+           margin-top: 40px;
+       }
+       
+       .container-rodape {
+           display: flex;
+           justify-content: center;
+           margin-top: 50px;
+       }
+       
+       .container-rodape .rodape {
+           display: flex;
+           justify-content: space-between;
+       }
+       
+       .rodape {
+           margin-bottom: 50px;
+       }
+       
+       .rodape strong {
+           font-size: 12px;
+       }
+       
+       .rodape a {
+           text-decoration: none;
+       }
+       
+       .rodape a:hover {
+           text-decoration: underline;
+           color: gray;
+       }
+       
+       .sobre div,
+       .comunidade div,
+       .anfitriao div,
+       .atendimento div {
+           margin-top: 20px;
+       }
+       
+       .rights {
+           display: flex;
+           justify-content: space-between;
+           margin: 25px 0;
+       }
+       
+       .rights img {
+           margin-bottom: -10px;
+           margin-left: 5px;
+       }
+       
+       @media only screen and (max-width: 768px) {
+           .navbar {
+               flex-direction: column;
+           }
+           .logo {
+               margin: 30px;
+           }
+           .reserva {
+               display: none;
+           }
+           hr {
+               display: none;
+           }
+           .resultado p {
+               margin-top: 75px;
+           }
+           .container-filtros {
+               flex-direction: column;
+           }
+           .filtros {
+               flex-direction: column;
+           }
+           .filtros div {
+               margin-bottom: 30px !important;
+           }
+           .card {
+               width: 100%;
+               margin-bottom: 30px;
+           }
+           .item-paginacao a {
+               margin-right: 20px;
+           }
+           .rodape {
+               flex-direction: column;
+               align-items: center;
+               text-align: center;
+               margin-top: -30px;
+           }
+           .sobre,
+           .anfitriao,
+           .comunidade,
+           .atendimento {
+               margin-bottom: 20px;
+           }
+           .rights {
+               flex-direction: column;
+           }
+           .rights img {
+               width: 24px;
+               height: 24px;
+               margin-bottom: -5px;
+           }
+           .card .foto:hover {
+               width: 100%;
+               height: auto;
+           }
+       }
